@@ -6,7 +6,7 @@
 
 .login-background {
   min-height: 100vh;
-  background: pink;
+  background: rgb(129, 158, 245);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +43,7 @@
 .login-button {
   width: 100%;
   padding: 0.75rem;
-  background: #e76991;
+  background: rgb(153, 90, 195);
   border: none;
   border-radius: 50px; /* helps make borders rounder */
   color: #4a3f5c;
@@ -54,4 +54,44 @@
   text-align: center;
   margin-top: 1.25rem;
   color: #9b8aaa;
+}
+
+.requirements {
+  list-style: none;
+  margin-bottom: 0.75rem;
+  padding: 0;
+}
+
+.requirements li {
+  margin-bottom: 3px;
+  font-size: 0.75rem;
+  padding-left: 1.2rem;
+  position: relative
+}
+
+.requirements li::before {
+  content: 'x';
+  position: absolute;
+  left: 0;
+  color: rgb(73, 73, 192);
+}
+
+.met {
+  color: #666482;
+}
+
+.met::before {
+  content: '✓' !important;
+  color: rgb(73, 73, 192) !important;
+}
+
+.unmet {
+  color: rgb(184, 9, 9);
+}
+
+.error {
+  color: rgb(255, 0, 0);
+  margin-bottom: 0.75rem;
+  font-size: 0.82rem;
+  text-align: center;
 }
